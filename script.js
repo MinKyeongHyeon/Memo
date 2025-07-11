@@ -57,6 +57,14 @@ function renderMemo() {
 
     `;
   });
+
+  // 경현님~!
+
+  // 여기 렌더함수에서 이벤트 리스너 추가를 순회를 다 끝나고 하고 계신데,
+  // 여기서 삭제 버튼을 선택하면 많은 버튼 중 가장 첫번째 요소만 선택하게 됩니다!
+
+  // 그래서 forEach 문 안에서 추가해주시거나, 또는 버튼 리스트를 선택하고 순회를 돌거나,
+  // 또는! 다른 상위 요소를 선택해서 위벤트 위임을 하는 방식 등 이벤트 추가 부분에서 수정이 필요합니다 🙌
   // 삭제 버튼에 이벤트 리스너 추가
   const memoNum = document.getElementsByClassName('index').value;
   const delbtn = document.getElementById('delbtn');
