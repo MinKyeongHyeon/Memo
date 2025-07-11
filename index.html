@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>나의 메모장</h1>
+    <h1>🍊제주 메모 연구소🐎</h1>
     <form id="memo-form">
-      <label for="title-input">제목</label>
-      <input type="text" id="title-input" required />
+      <label for="title-input" aria-required="true">제목</label>
+      <input type="text" id="title-input" />
       <label for="content-input">내용</label>
       <textarea name="content-input" id="content-input"></textarea>
       <button type="submit">저장하기</button>
