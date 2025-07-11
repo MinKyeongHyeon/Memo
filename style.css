@@ -81,7 +81,7 @@ ul#memo-list p {
   margin: 4px 0;
 }
 
-#delbtn {
+.btnGreen {
   background: #43a047;
   color: #fff;
   border: none;
@@ -92,6 +92,6 @@ ul#memo-list p {
   font-size: 0.95rem;
 }
 
-#delbtn:hover {
+.btnGreen:hover {
   background: #388e3c;
 }
