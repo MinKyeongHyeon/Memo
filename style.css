@@ -1,0 +1,97 @@
+body {
+  background: #fffbe6;
+  font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+}
+
+h1 {
+  color: #ff9100;
+  text-align: center;
+  text-shadow: 1px 1px 0 #ffd180;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #fff7e0;
+  border: 2px solid #ff9100;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px #ffd18055;
+  max-width: 400px;
+  margin: 0 auto 32px auto;
+}
+
+label {
+  color: #ff9100;
+  font-weight: bold;
+  margin-top: 12px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1.5px solid #ffb74d;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+  background: #fffde7;
+  font-size: 1rem;
+}
+
+button[type='submit'] {
+  background: linear-gradient(90deg, #ff9100 60%, #ffd180 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #ffd18055;
+  transition: background 0.2s;
+}
+
+button[type='submit']:hover {
+  background: linear-gradient(90deg, #ffd180 60%, #ffa726 100%);
+}
+
+ul#memo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+ul#memo-list li {
+  background: #fffde7;
+  border: 1.5px solid #ffb74d;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 4px #ffd18033;
+}
+
+ul#memo-list h3 {
+  color: #43a047;
+  margin-bottom: 8px;
+}
+
+ul#memo-list p {
+  color: #ff9100;
+  margin: 4px 0;
+}
+
+#delbtn {
+  background: #43a047;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+#delbtn:hover {
+  background: #388e3c;
+}
