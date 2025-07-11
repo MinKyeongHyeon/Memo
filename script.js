@@ -42,17 +42,17 @@ function renderMemo() {
   // 메모가 없으면 "작성된 메모가 없습니다" 메시지 출력
   if (memoData.length === 0) {
     memoList.innerHTML = `<h3>어이!,작성된 메모가 없수다.</h3>`;
-    console.log(memoData);
+
     return;
   }
+
   // 메모가 있으면 반복문으로 각 메모를 화면에 출력
   memoData.forEach((v, i) => {
     memoList.innerHTML += `
       <li>
-        <h3 class='index'>${i}</h3>
         <p>${v.title}</p>
         <p>${v.content}</p>
-        <button id ='delbtn'>삭제</button>
+        <button class='btnGreen' id='delbtn-${i}'>삭제</button>
       </li>
 
     `;
@@ -66,11 +66,18 @@ function renderMemo() {
   // 그래서 forEach 문 안에서 추가해주시거나, 또는 버튼 리스트를 선택하고 순회를 돌거나,
   // 또는! 다른 상위 요소를 선택해서 위벤트 위임을 하는 방식 등 이벤트 추가 부분에서 수정이 필요합니다 🙌
   // 삭제 버튼에 이벤트 리스너 추가
-  const memoNum = document.getElementsByClassName('index').value;
-  const delbtn = document.getElementById('delbtn');
-  delbtn.addEventListener('click', () => {
-    deleteMemo(Number(memoNum));
-    renderMemo();
+  // const memoNum = document.getElementsByClassName('index').value;
+  // const delbtn = document.getElementById('delbtn');
+  // delbtn.addEventListener('click', () => {
+
+  //   deleteMemo(Number(memoNum));
+  //   renderMemo();
+  // });
+  memoData.forEach((v, i) => {
+    const delbtn = document.getElementById(`delbtn-${i}`);
+    delbtn.addEventListener('click', () => {
+      deleteMemo(i);
+    });
   });
 }
 
